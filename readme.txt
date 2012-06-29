@@ -15,16 +15,11 @@ XML-Sitemap.co.uk is an xml sitemap generator especially designed for use with G
 XML-Sitemap.co.uk creates an XML document in your WordPress directory allowing you to easily submit your sitemap to search engines. This plugin also gives you access to a handy WordPress Shortcode [xml-sitemap] to dsplay a HTML sitemap on any page or post!
 
 
-A few notes about the sections above:
+Upcoming Features:
 
-*   "Contributors" is a comma separated list of wp.org/wp-plugins.org usernames
-*   "Tags" is a comma separated list of tags that apply to the plugin
-*   "Requires at least" is the lowest version that the plugin will work on
-*   "Tested up to" is the highest version that you've *successfully used to test the plugin*. Note that it might work on
-higher versions... this is just the highest one you've verified.
-*   Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
-stable.
-
+*  Choose what you want to display in your sitemap, exclude pages from sitemap dependant on ID.
+*  Added options for Shortcode
+*  Generate an unlimited amount of urls
     
 
 == Installation ==
