@@ -59,9 +59,3 @@ Ordered list:
 
 1. XML File sitemap
 2. HTML Shortcode Sitemap
-
-
-
-
-
-`<?php code(); // goes in backticks ?>`
