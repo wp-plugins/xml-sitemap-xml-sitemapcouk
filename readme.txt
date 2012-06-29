@@ -42,9 +42,7 @@ We're actually currently in development of our members portal on our website. Th
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the directory of the stable readme.txt, so in this case, `/tags/4.3/screenshot-1.png` (or jpg, jpeg, gif)
-2. This is the second screen shot
+1. Admin area of the XML Sitemap Plugin
 
 == Changelog ==
 
