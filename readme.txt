@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: Simon Hancox 
 Donate link: http://www.XML-Sitemap.co.uk
-Tags: XML Sitemap, sitemap, generator, free
+Tags: XML Sitemap, sitemap, generator, free, free sitemap, xml sitemap generator, sitemap generator, html sitemap
 Requires at least: 2.0.2
 Tested up to: 3.4.1
 Stable tag: trunk
@@ -45,6 +45,11 @@ We're actually currently in development of our members portal on our website. Th
 1. Admin area of the XML Sitemap Plugin
 
 == Changelog ==
+
+= 0.1.1 =
+
+Change URLS in settings page to load new window
+
 
 = 0.1 =
 This is the first release of our plugin. XML Sitemap and Shortcode for HTML sitemap
