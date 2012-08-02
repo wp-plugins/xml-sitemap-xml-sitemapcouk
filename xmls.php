@@ -28,7 +28,7 @@ License: GPL2
 
 // some definition we will use
 define( 'XMLS_PUGIN_NAME', 'XML Sitemap Generator');
-define( 'XMLS_PLUGIN_DIRECTORY', 'xml-sitemap.co.uk');
+define( 'XMLS_PLUGIN_DIRECTORY', 'xml-sitemap-xml-sitemapcouk');
 define( 'XMLS_CURRENT_VERSION', '0.1.1.0' );
 define( 'XMLS_CURRENT_BUILD', '3' );
 define( 'XMLS_LOGPATH', str_replace('\\', '/', WP_CONTENT_DIR).'/xmls-logs/');
