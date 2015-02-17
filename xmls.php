@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: XML Sitemap - XML-Sitemap.co.uk
-Plugin URI: http://www.XML-Sitemap.co.uk
+Plugin Name: XML Sitemap - Sitemaps.io
+Plugin URI: http://www.sitemaps.io
 Description: XML Sitemap creates an XML for use with Google and Yahoo, you can also place a HTML sitemap using the shortcode [xml-sitemap]
-Version: 0.1.0.0
-Author: XML-Sitemap - XML-Sitemap.co.uk
-Author URI: http://www.XML-Sitemap.co.uk
+Version: 0.1.0.1
+Author: Simon Hancox - Sitemaps.io
+Author URI: http://www.Sitemaps.io
 License: GPL2
 */
 
@@ -27,7 +27,7 @@ License: GPL2
 ?><?php
 
 // some definition we will use
-define( 'XMLS_PUGIN_NAME', 'XML Sitemap Generator');
+define( 'XMLS_PUGIN_NAME', 'XML Sitemap Generator - Sitemaps.io');
 define( 'XMLS_PLUGIN_DIRECTORY', 'xml-sitemap-xml-sitemapcouk');
 define( 'XMLS_CURRENT_VERSION', '0.1.1.0' );
 define( 'XMLS_CURRENT_BUILD', '3' );
