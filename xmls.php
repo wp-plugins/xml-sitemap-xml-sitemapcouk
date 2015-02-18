@@ -3,7 +3,7 @@
 Plugin Name: XML Sitemap - Sitemaps.io
 Plugin URI: http://www.sitemaps.io
 Description: XML Sitemap creates an XML for use with Google and Yahoo, you can also place a HTML sitemap using the shortcode [xml-sitemap]
-Version: 0.1.0.1
+Version: 0.1.4.0
 Author: Simon Hancox - Sitemaps.io
 Author URI: http://www.Sitemaps.io
 License: GPL2
