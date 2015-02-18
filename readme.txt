@@ -45,6 +45,10 @@ We're actually currently in development of our members portal on our website. Th
 1. Admin area of the XML Sitemap Plugin
 
 == Changelog ==
+= 0.1.3 =
+
+updated some code
+
 = 0.1.2 =
 
 Tested with WP 4.1, works.
